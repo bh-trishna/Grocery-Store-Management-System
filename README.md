@@ -1,51 +1,92 @@
-# python_projects_grocery_webapp
-In this python project, we have built a grocery store management application. It is a 3 tier application,
-1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
-2. Backend: Python and Flask
-3. Database: mysql
+# 🛒 Grocery Store Management System
 
-![alt text](image.png)
+A **3-tier web application** for managing grocery products, customer orders, and inventory — built with **Python (Flask)**, **MySQL**, and a responsive **Bootstrap-based UI**.
 
+---
 
-🚀 Features
-Product Management
-1. Add, update, and delete grocery products
-2. Assign unit of measurement (UOM) to each product
+## 📂 Project Architecture
+1. **Frontend:** HTML, CSS, JavaScript, Bootstrap  
+2. **Backend:** Python (Flask)  
+3. **Database:** MySQL  
 
-Order Management
-1. Create and manage customer orders
-2. Automatic total price calculation
+![Application Screenshot](homepage.JPG)
 
-Interactive UI
-1. Responsive layout with Bootstrap
-2. Sidebar navigation menu
+---
 
-Database Integration
-1. MySQL backend for persistent data storage
-2. DAO (Data Access Object) pattern for clean database interactions
+## 🚀 Features
 
+### 🏬 Product Management
+- Add, update, and delete grocery products  
+- Assign **Unit of Measurement (UOM)** to each product  
 
-⚙️ Installation & Setup
-1. Clone the repository
-    git clone https://github.com/bh-trishna/Grocery-Store-Management-System.git
-    cd grocery_app
+### 📦 Order Management
+- Create and manage customer orders  
+- Automatic total price calculation  
 
-2. Set up a Python virtual environment  
-   (optional but recommended)
-    python -m venv venv
-    source venv/bin/activate   # On Mac/Linux
-    venv\Scripts\activate      # On Windows
+### 💻 Interactive UI
+- Responsive layout with Bootstrap  
+- Sidebar navigation menu for quick access  
 
-3. Install dependencies
-    pip install -r requirements.txt
+### 🗄 Database Integration
+- MySQL backend for persistent data storage  
+- **DAO Pattern** for clean and modular database operations  
 
-4. Set up the MySQL database
-    Create a database in MySQL (e.g., grocery_db)
-    Update sql_connection.py with your database credentials
-    Run SQL scripts to create required tables (products, orders, uom)
+---
 
-5. Run the backend server
-    python backend/server.py
+## ⚙️ Installation & Setup
 
-6. Open the frontend
-    Open ui/index.html in a browser, or set up Flask to serve static files.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/bh-trishna/Grocery-Store-Management-System.git
+cd grocery_app
+````
+
+### 2️⃣ Set Up Virtual Environment (Optional but Recommended)
+
+```bash
+python -m venv venv
+# Activate virtual environment
+# Mac/Linux:
+source venv/bin/activate
+# Windows:
+venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Configure MySQL Database
+
+* Create a new database (e.g., `grocery_db`)
+* Update **`sql_connection.py`** with your database credentials
+* Run the SQL scripts to create tables:
+
+  * `products`
+  * `orders`
+  * `uom`
+
+### 5️⃣ Run the Backend Server
+
+```bash
+python backend/server.py
+```
+
+### 6️⃣ Open the Frontend
+
+* Open `ui/index.html` directly in your browser
+  **OR**
+* Configure Flask to serve static files for a fully integrated app
+
+---
+
+## 📌 Tech Stack
+
+* **Frontend:** HTML, CSS, JavaScript, Bootstrap
+* **Backend:** Python (Flask)
+* **Database:** MySQL
+
+---
+
